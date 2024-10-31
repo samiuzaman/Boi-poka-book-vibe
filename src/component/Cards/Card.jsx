@@ -3,13 +3,13 @@ const Card = ({ card }) => {
   const { image, tags, bookName, author, category, rating } = card;
   return (
     <div className="card bg-base-100 w-96 shadow-xl p-5 border-2">
-      <figure className="bg-base-200 mb-6">
+      <figure className="bg-base-200 mb-6 rounded-2xl">
         <img className="w-32 h-46 py-8" src={image} alt="Shoes" />
       </figure>
       <div className="text-left border-b-2 border-dashed pb-4 flex-grow">
         <div className="card-actions mb-4">
           {tags.map((tag) => (
-            <div className="border-2 border-myGreen-0 rounded-full px-2">
+            <div className="border-2 bg-base-100 border-myGreen-0 text-myGreen-0 rounded-full px-2">
               {tag}
             </div>
           ))}
