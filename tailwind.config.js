@@ -2,7 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        workSans: ["Work Sans", "sans-serif"],
+        PlayfairDisplay: ["Playfair Display", "serif"],
+      },
+    },
   },
   plugins: [require("daisyui")],
 };

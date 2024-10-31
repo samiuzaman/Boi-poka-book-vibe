@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 .active {
   @apply text-[#23BE0A] border-2 border-[#23BE0A]  px-3 py-1 rounded-md;
 }
