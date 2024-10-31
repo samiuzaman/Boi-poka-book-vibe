@@ -4,7 +4,7 @@ const Footer = () => {
       <aside>
         <p>
           Copyright © {new Date().getFullYear()} - All right reserved by Boi
-          Poka Book Vibeg Ltd
+          Poka Book Vibe Ltd
         </p>
       </aside>
     </footer>
