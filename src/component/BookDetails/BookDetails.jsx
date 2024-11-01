@@ -25,7 +25,7 @@ const BookDetails = () => {
   };
 
   const handleWishlist = (id) => {
-    addToStoreWishlist(id)
+    addToStoreWishlist(id);
   };
 
   return (
