@@ -1,6 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { addToStoreReadList } from "../../Utility/AddtoDB";
 import { addToStoreWishlist } from "../../Utility/WishlistDB";
+import { toast } from "react-toastify";
 
 const BookDetails = () => {
   const { bookId } = useParams();
@@ -22,10 +23,12 @@ const BookDetails = () => {
 
   const handleMarkAsRead = (id) => {
     addToStoreReadList(id);
+    toast("This book is added to your read list.");
   };
 
   const handleWishlist = (id) => {
     addToStoreWishlist(id);
+    toast("This book is added to your read list.");
   };
 
   return (
